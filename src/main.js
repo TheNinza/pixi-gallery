@@ -471,8 +471,8 @@ import stageFragmentShader from "./shader/stage-shader.glsl?raw";
       // Multiply the values by a coefficient to get a smooth animation
       uniforms.uPointerDown +=
         (pointerDownTarget - uniforms.uPointerDown) * 0.075;
-      uniforms.uPointerDiff.x += (diffX - uniforms.uPointerDiff.x) * 0.2;
-      uniforms.uPointerDiff.y += (diffY - uniforms.uPointerDiff.y) * 0.2;
+      uniforms.uPointerDiff.x += (diffX - uniforms.uPointerDiff.x) * 0.1;
+      uniforms.uPointerDiff.y += (diffY - uniforms.uPointerDiff.y) * 0.1;
       // Set position for the container
       container.x = uniforms.uPointerDiff.x - centerX;
       container.y = uniforms.uPointerDiff.y - centerY;
